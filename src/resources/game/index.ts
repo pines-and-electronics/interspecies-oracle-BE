@@ -8,11 +8,21 @@ const GameSchema = new Schema(
       type: String,
       required: true,
     },
+    thoughts: {
+      type: String,
+    },
     description: {
       type: String,
       unique: true,
       required: true,
     },
+    rewards: {
+      type: [String]
+    },
+    state: {
+      type: String,
+      enum: ['Active', 'Inactive']
+    }
   },
   {
     timestamps: true,
