@@ -3,10 +3,12 @@ import mongoose from 'mongoose'
 
 import User from './user'
 import Game from './game'
+import Submission from './submission'
 
 const RESOURCE_SCHEMAS = {
   User,
   Game,
+  Submission,
 }
 
 for (const name of mongoose.modelNames()) {

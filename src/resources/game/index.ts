@@ -17,12 +17,12 @@ const GameSchema = new Schema(
       required: true,
     },
     rewards: {
-      type: [String]
+      type: [String],
     },
-    state: {
-      type: String,
-      enum: ['Active', 'Inactive']
-    }
+    active: {
+      type: Boolean,
+      default: true,
+    },
   },
   {
     timestamps: true,
