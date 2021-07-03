@@ -1,0 +1,68 @@
+name: Publish
+
+on:
+  release:
+    types:
+      - published
+
+jobs:
+  test_on_multiple_os:
+    runs-on: ${{ matrix.os }}
+
+    strategy:
+      matrix:
+        os: [ubuntu-latest, windows-latest, macOS-latest]
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Use Node.js 12.x
+        uses: actions/setup-node@v1
+        with:
+          node-version: 12.x
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Run build
+        run: npm run build
+
+  test_on_docker:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+      - name: Docker Test
+        run: make test
+
+  # publish_on_docker_hub:
+  #   needs: [test_on_docker]
+  #   runs-on: ubuntu-latest
+  #   steps:
+  #     - name: Checkout code
+  #       uses: actions/checkout@v2
+
+  #     - name: Build and push Docker images
+  #       uses: docker/build-push-action@v1
+  #       with:
+  #         username: ${{ secrets.DOCKER_USERNAME }}
+  #         password: ${{ secrets.DOCKER_PASSWORD }}
+  #         repository: sanyamarya/nodejs-boilerplate-koa
+  #         dockerfile: ./prod.Dockerfile
+  #         tag_with_ref: true
+
+  publish_on_github_repo:
+    # needs: [test_on_docker]
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+      - name: Login to github docker repo
+        run: docker login docker.pkg.github.com --username ersanyamarya --password ${{ secrets.GITHUB_TOKEN }}
+      - name: Build the docker image ad publish to github packages
+        run: |
+          VERSION=$(date +%s)
+          TAGNAME=docker.pkg.github.com/${{github.repository}}/app:${VERSION}
+          docker build --tag ${TAGNAME} --file ./prod.Dockerfile .
+          docker push ${TAGNAME}

@@ -1,0 +1,83 @@
+{
+  "name": "nodejs-typescript-graphql-koa-boilerplate",
+  "version": "1.0.0",
+  "description": "A simple nodeJs Typescript boilerplate using Koa web server. Most probably TypeORM/Mongoose.",
+  "main": "./src/index.js",
+  "scripts": {
+    "build": "tsc --project tsconfig.json",
+    "develop": "nodemon --ext ts,json --watch src --exec node --inspect=0.0.0.0:9229 -r ts-node/register src/index.ts",
+    "lint-fix": "eslint --ext ts --fix ./src ./__tests__",
+    "lint": "eslint --ext ts ./src ./__tests__",
+    "test": "NODE_ENV=test jest --config=./jest.config.js --runInBand --no-cache",
+    "format": "prettier --write \"**/*.{ts,ts,json,md}\""
+  },
+  "lint-staged": {
+    "*.ts": "eslint"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ersanyamarya/nodejs-typescript-graphql-koa-boilerplate.git"
+  },
+  "keywords": [
+    "nodejs",
+    "koa",
+    "typescript"
+  ],
+  "author": "Sanyam Arya",
+  "license": "GPL-3.0-or-later",
+  "bugs": {
+    "url": "https://github.com/ersanyamarya/nodejs-typescript-graphql-koa-boilerplate/issues"
+  },
+  "homepage": "https://github.com/ersanyamarya/nodejs-typescript-graphql-koa-boilerplate#readme",
+  "dependencies": {
+    "apollo-server-koa": "^2.24.0",
+    "bcryptjs": "^2.4.3",
+    "dotenv": "^9.0.2",
+    "graphql": "^15.5.0",
+    "graphql-compose": "^8.0.1",
+    "graphql-compose-mongoose": "^9.3.0",
+    "jsonwebtoken": "^8.5.1",
+    "koa": "^2.13.1",
+    "koa-router": "^10.0.0",
+    "koa2-cors": "^2.0.6",
+    "log4js": "^6.3.0",
+    "mongoose": "^5.12.9",
+    "uuid": "^8.3.2",
+    "yaml": "^1.10.0"
+  },
+  "devDependencies": {
+    "@types/bcryptjs": "^2.4.2",
+    "@types/jest": "^26.0.20",
+    "@types/koa": "^2.11.8",
+    "@types/koa-bodyparser": "^4.3.0",
+    "@types/koa-router": "^7.4.1",
+    "@types/koa2-cors": "^2.0.1",
+    "@types/node": "^15.0.2",
+    "@typescript-eslint/eslint-plugin": "^4.22.1",
+    "@typescript-eslint/parser": "^4.0.0",
+    "eslint": "^7.21.0",
+    "eslint-config-koa": "^2.0.2",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-config-standard": "^16.0.2",
+    "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-prettier": "^3.3.1",
+    "eslint-plugin-promise": "^4.3.1",
+    "eslint-plugin-standard": "^5.0.0",
+    "husky": "^6.0.0",
+    "jest": "^26.6.3",
+    "jest-junit": "^12.0.0",
+    "lint-staged": "^11.0.0",
+    "nodemon": "^2.0.7",
+    "prettier": "^2.2.1",
+    "supertest": "^6.1.3",
+    "ts-jest": "^26.5.3",
+    "ts-node": "^9.1.1",
+    "typescript": "^4.2.3"
+  }
+}
