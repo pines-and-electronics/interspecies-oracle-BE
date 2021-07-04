@@ -19,6 +19,7 @@ const genSchema = (collection: string, TC): IReturn => {
     [`${collection}UpdateById`]: TC.mongooseResolvers.updateById(),
     [`${collection}RemoveById`]: TC.mongooseResolvers.removeById(),
     [`${collection}CreateOne`]: TC.mongooseResolvers.createOne(),
+    [`${collection}RemoveMany`]: TC.mongooseResolvers.removeMany(),
   }
   return { queries, mutations }
 }
