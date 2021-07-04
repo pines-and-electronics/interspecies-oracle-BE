@@ -8,6 +8,74 @@ const SubmissionSchema = new Schema(
       type: String,
       required: true,
     },
+    gameID: {
+      type: String,
+      required: false,
+    },
+    userID: {
+      type: String,
+      required: false,
+    },
+    pictureHash: {
+      type: String,
+      required: false,
+    },
+    pictureLink: {
+      type: String,
+      required: false,
+    },
+    maskHash: {
+      type: String,
+      required: false,
+    },
+    maskLink: {
+      type: String,
+      required: false,
+    },
+    location: {
+      latitude: {
+        type: String,
+        required: false,
+      },
+      longitude: {
+        type: String,
+        required: false,
+      },
+    },
+    gpsAccuracy: {
+      type: String,
+      required: false,
+    },
+    poem: {
+      type: String,
+      required: false,
+    },
+    description: {
+      type: String,
+      required: false,
+    },
+    flagCertified: {
+      type: Boolean,
+      default: false,
+    },
+    flagEntered: {
+      type: Boolean,
+      default: false,
+    },
+    votes: {
+      type: Number,
+      default: 0,
+    },
+    flagWinner: {
+      type: Boolean,
+      default: false,
+    },
+    staking: {
+      stake: {
+        type: Number,
+        default: 0,
+      },
+    },
   },
   {
     timestamps: true,
