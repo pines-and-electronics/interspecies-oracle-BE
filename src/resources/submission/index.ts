@@ -28,6 +28,10 @@ const SubmissionSchema = new Schema(
       type: String,
       required: false,
     },
+    maskImage: {
+      type: String,
+      required: false,
+    },
     maskLink: {
       type: String,
       required: false,
