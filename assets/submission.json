@@ -1,0 +1,193 @@
+{
+    "records": [
+        {
+            "name": "Becky",
+            "gameID": "KOB",
+            "userID": "Big Chungus",
+            "pictureHash": "0x44444",
+            "pictureLink": "https://github.com/pines-and-electronics/interspecies-oracle-BE/raw/main/assets/pictures/becky.png",
+            "maskHash": "0x5555",
+            "maskImage": "To decide format etc....",
+            "maskLink": "https://link2.url",
+            "location": {
+                "latitude": "52°30'33.211 N",
+                "longitude": "13°28'10.114 E"
+            },
+            "gpsAccuracy": "40",
+            "poem": "All Watched Over by Machines of Loving Grace",
+            "description": "Take a look at me!",
+            "flagCertified": true,
+            "flagEntered": true,
+            "votes": 10,
+            "flagWinner": false
+        },
+        {
+            "name": "Becky Cheesits",
+            "gameID": "KOB",
+            "userID": "Big Chungus",
+            "pictureHash": "0x44444",
+            "pictureLink": "https://github.com/pines-and-electronics/interspecies-oracle-BE/raw/main/assets/pictures/beckycheesits.png",
+            "maskHash": "0x5555",
+            "maskImage": "To decide format etc....",
+            "maskLink": "https://link2.url",
+            "location": {
+                "latitude": "52°30'33.211 N",
+                "longitude": "13°28'10.114 E"
+            },
+            "gpsAccuracy": "40",
+            "poem": "Where da club at?",
+            "description": "I'm here, I'm a bug, let's get going!",
+            "flagCertified": true,
+            "flagEntered": true,
+            "votes": 144,
+            "flagWinner": false
+        },
+        {
+            "name": "Charles",
+            "gameID": "KOB",
+            "userID": "Big Chungus",
+            "pictureHash": "0x44444",
+            "pictureLink": "https://github.com/pines-and-electronics/interspecies-oracle-BE/raw/main/assets/pictures/charles.png",
+            "maskHash": "0x5555",
+            "maskImage": "To decide format etc....",
+            "maskLink": "https://link2.url",
+            "location": {
+                "latitude": "52°30'33.211 N",
+                "longitude": "13°28'10.114 E"
+            },
+            "gpsAccuracy": "40",
+            "poem": "Once there bug a man named Charles, who loved to paint himself into corners.",
+            "description": "Here I would like to describe my most important feature: I'm a bug.",
+            "flagCertified": true,
+            "flagEntered": false,
+            "votes": 5,
+            "flagWinner": false
+        },
+        {
+            "name": "Definitely a Bug",
+            "gameID": "KOB",
+            "userID": "Big Chungus",
+            "pictureHash": "0x44444",
+            "pictureLink": "https://github.com/pines-and-electronics/interspecies-oracle-BE/raw/main/assets/pictures/definitelybug.png",
+            "maskHash": "0x5555",
+            "maskImage": "To decide format etc....",
+            "maskLink": "https://link2.url",
+            "location": {
+                "latitude": "52°30'33.211 N",
+                "longitude": "13°28'10.114 E"
+            },
+            "gpsAccuracy": "40",
+            "poem": "Bark bark!",
+            "description": "I am for sure a bug guys, next!",
+            "flagCertified": true,
+            "flagEntered": false,
+            "votes": 64,
+            "flagWinner": false
+        },
+        {
+            "name": "Giant Fuzz Bug",
+            "gameID": "KOB",
+            "userID": "Big Chungus",
+            "pictureHash": "0x44444",
+            "pictureLink": "https://github.com/pines-and-electronics/interspecies-oracle-BE/raw/main/assets/pictures/giantfuzzbug.png",
+            "maskHash": "0x5555",
+            "maskImage": "To decide format etc....",
+            "maskLink": "https://link2.url",
+            "location": {
+                "latitude": "52°30'33.211 N",
+                "longitude": "13°28'10.114 E"
+            },
+            "gpsAccuracy": "40",
+            "poem": "Graceful scourge of the skies, soaring over my soul, plz bite me.",
+            "description": "Extra Flappy",
+            "flagCertified": true,
+            "flagEntered": true,
+            "votes": 11,
+            "flagWinner": false
+        },
+        {
+            "name": "Lambo",
+            "gameID": "KOB",
+            "userID": "Big Chungus",
+            "pictureHash": "0x44444",
+            "pictureLink": "https://github.com/pines-and-electronics/interspecies-oracle-BE/raw/main/assets/pictures/lambo.png",
+            "maskHash": "0x5555",
+            "maskImage": "To decide format etc....",
+            "maskLink": "https://link2.url",
+            "location": {
+                "latitude": "52°30'33.211 N",
+                "longitude": "13°28'10.114 E"
+            },
+            "gpsAccuracy": "40",
+            "poem": "Vroooooooom!",
+            "description": "So pretty!",
+            "flagCertified": true,
+            "flagEntered": true,
+            "votes": 112,
+            "flagWinner": false
+        },
+        {
+            "name": "Madam of the Crops",
+            "gameID": "KOB",
+            "userID": "Big Chungus",
+            "pictureHash": "0x44444",
+            "pictureLink": "https://github.com/pines-and-electronics/interspecies-oracle-BE/raw/main/assets/pictures/madamcropped.png",
+            "maskHash": "0x5555",
+            "maskImage": "To decide format etc....",
+            "maskLink": "https://link2.url",
+            "location": {
+                "latitude": "52°30'33.211 N",
+                "longitude": "13°28'10.114 E"
+            },
+            "gpsAccuracy": "40",
+            "poem": "Delicious with ketchup.",
+            "description": "Descriptive text is 4 lozers.",
+            "flagCertified": true,
+            "flagEntered": true,
+            "votes": 46,
+            "flagWinner": false
+        },
+        {
+            "name": "Mr. Squishy",
+            "gameID": "KOB",
+            "userID": "Big Chungus",
+            "pictureHash": "0x44444",
+            "pictureLink": "https://github.com/pines-and-electronics/interspecies-oracle-BE/raw/main/assets/pictures/mrsquishy.png",
+            "maskHash": "0x5555",
+            "maskImage": "To decide format etc....",
+            "maskLink": "https://link2.url",
+            "location": {
+                "latitude": "52°30'33.211 N",
+                "longitude": "13°28'10.114 E"
+            },
+            "gpsAccuracy": "40",
+            "poem": "Do I dare to hope for such a delicate friend?",
+            "description": "This little guy was discovered under a rock.",
+            "flagCertified": true,
+            "flagEntered": true,
+            "votes": 3,
+            "flagWinner": false
+        },
+        {
+            "name": "Randolphius Minis",
+            "gameID": "KOB",
+            "userID": "Big Chungus",
+            "pictureHash": "0x44444",
+            "pictureLink": "https://github.com/pines-and-electronics/interspecies-oracle-BE/raw/main/assets/pictures/randolphiusminis.png",
+            "maskHash": "0x5555",
+            "maskImage": "To decide format etc....",
+            "maskLink": "https://link2.url",
+            "location": {
+                "latitude": "52°30'33.211 N",
+                "longitude": "13°28'10.114 E"
+            },
+            "gpsAccuracy": "40",
+            "poem": "Roses are blood, violets are pain, we will own this park again.",
+            "description": "We were discovered by the fountain",
+            "flagCertified": true,
+            "flagEntered": true,
+            "votes": 241,
+            "flagWinner": true
+        }
+    ]
+}

@@ -1,0 +1,60 @@
+mutation addMultipleSubmissions($records:[CreateManySubmissionInput!]!){
+
+  submissionCreateMany(records:$records){
+    records{
+      name
+    }
+  }
+
+}
+
+
+
+mutation{
+    submissionRemoveMany(filter:{gameID:"KOB})
+    {
+      numAffected
+    }
+}
+
+
+
+mutation {submissionCreateOne(
+    record: {}
+  )
+  {record{name
+        }
+    }
+}
+
+
+
+mutation {submissionCreateOne(record: {name: "Mr. Squishy",
+      gameID: "KOB",
+      userID: "Big Chungus",
+      pictureHash: "0x44444",
+      pictureLink: "https://github.com/pines-and-electronics/interspecies-oracle-BE/raw/main/assets/pictures/mrsquishy.png",
+      maskHash: "0x5555",
+      maskImage: "To decide format etc...."
+      maskLink: "https://link2.url",
+      location: {
+        latitude: "52°30'33.211 N",
+        longitude: "13°28'10.114 E"
+        },
+      gpsAccuracy: "40",
+      poem: "Do I dare to hope for such a delicate friend?",
+      description: "This little guy was discovered under a rock.",
+      flagCertified: true,
+      flagEntered: true,
+      votes: 46,
+      flagWinner: false,
+    }
+  ){record{name
+        }
+    }
+}
+
+
+
+  mutation {submissionCreateMany(records:)
+}
