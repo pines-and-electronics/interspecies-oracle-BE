@@ -69,6 +69,7 @@ const SubmissionSchema = new Schema(
     votes: {
       type: Number,
       default: 0,
+      index: true,
     },
     flagWinner: {
       type: Boolean,
